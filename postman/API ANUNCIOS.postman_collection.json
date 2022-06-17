@@ -1,0 +1,488 @@
+{
+	"info": {
+		"_postman_id": "f2963d6e-56c1-414b-a089-25a040adf763",
+		"name": "API ANUNCIOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ANUNCIOS",
+			"item": [
+				{
+					"name": "Get anuncios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get anuncios Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62ab86ee7f076651638bd50c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete anuncios Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQxODI4MCwiZXhwIjoxNjU1NTA0NjgwfQ.F-vGS9pmaHr-lGNs1h-GenVwf8zrEn2yT7W1rBiDo_k",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62abe1c258c33f5bc2143d31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62abe1c258c33f5bc2143d31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update anuncio Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"amenidades\": [{\r\n        \"cantBanos\": 2\r\n\r\n    }]\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62ab86ee7f076651638bd50c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post anuncio --> el usuario que lo crea es el ha iniciado seccion y pasa su access-token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJiMWNiN2JmNjg0MzAyZGFhOTE5YyIsImlhdCI6MTY1NTQ0Mjc3NCwiZXhwIjoxNjU1NTI5MTc0fQ.4-USs1pOYmCbavvYKE7f3AdOjVpE4tI5gWjX770HBHI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propiedad\": \"62abc945f9acb1219dd4153c\",\r\n    \"moneda\": \"Dolar Americano\",\r\n    \"precio\": 40000,\r\n    \"descripcion\": \"Casa de lujo con espacio suficiente para familias extensas\",\r\n    \"imgUrl\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get anuncios Id Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62abb1cb7bf684302daa919c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62abb1cb7bf684302daa919c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post anuncio img",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQyNTg2MiwiZXhwIjoxNjU1NTEyMjYyfQ.qtXiUcpUwrbfEitM90Sekt9C13_y9LIcEAuXATOUnPc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/lopez/Downloads/casasgaldamez.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/upload-image/62abe36d1ee70d80cd3c5296",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"upload-image",
+								"62abe36d1ee70d80cd3c5296"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Iniciar Secion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gersonM@gmail.com\",\r\n    \"contrasenia\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resgistrarse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Alex\",\r\n    \"apellido\": \"Lopez\",\r\n    \"email\": \"alexl@gmail.com\",\r\n    \"contrasenia\": \"1234\",\r\n    \"telefono\": 6029232\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/registrarse",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"registrarse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get usuario id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/usuario/62aba0ef9c8758662b1e10f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuario",
+								"62aba0ef9c8758662b1e10f7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Propiedad",
+			"item": [
+				{
+					"name": "get propiedad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/propiedad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"propiedad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post propiedad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"nombre\": \"Los Calderones\",\r\n      \"amenidades\": [{\r\n        \"cantBanos\": 2,\r\n        \"cantHabitaciones\": 20,\r\n        \"cantEstacionamientos\": 2,\r\n        \"piscina\": true,\r\n        \"aireAcondicionado\": true,\r\n        \"seguridadPrivada\": true,\r\n        \"jardin\": false\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/propiedad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"propiedad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get propiedad Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"nombre\": \"Entre Pinos\",\r\n      \"amenidades\": [{\r\n        \"cantBanos\": 2,\r\n        \"cantHabitaciones\": 20,\r\n        \"cantEstacionamientos\": 2,\r\n        \"piscina\": true,\r\n        \"aireAcondicionado\": true,\r\n        \"seguridadPrivada\": true,\r\n        \"jardin\": false\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/propiedad/62abc984fa5a40ac7b5dc674",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"propiedad",
+								"62abc984fa5a40ac7b5dc674"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update propiedad",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQyNTg2MiwiZXhwIjoxNjU1NTEyMjYyfQ.qtXiUcpUwrbfEitM90Sekt9C13_y9LIcEAuXATOUnPc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n      \"amenidades\": [{\r\n        \"cantBanos\": 2,\r\n        \"cantHabitaciones\": 10,\r\n        \"cantEstacionamientos\": 2,\r\n        \"piscina\": true,\r\n        \"aireAcondicionado\": true,\r\n        \"seguridadPrivada\": true,\r\n        \"jardin\": false\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/propiedad/62abc984fa5a40ac7b5dc674",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"propiedad",
+								"62abc984fa5a40ac7b5dc674"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete propiedad",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQyNTg2MiwiZXhwIjoxNjU1NTEyMjYyfQ.qtXiUcpUwrbfEitM90Sekt9C13_y9LIcEAuXATOUnPc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/propiedad/62abca1a0fdccac3941bfa64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"propiedad",
+								"62abca1a0fdccac3941bfa64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
