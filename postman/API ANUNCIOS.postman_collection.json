@@ -1,212 +1,11 @@
 {
 	"info": {
-		"_postman_id": "f2963d6e-56c1-414b-a089-25a040adf763",
+		"_postman_id": "59f64bef-86c9-47d0-8a60-a8bf54671388",
 		"name": "API ANUNCIOS",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9428748"
 	},
 	"item": [
-		{
-			"name": "ANUNCIOS",
-			"item": [
-				{
-					"name": "Get anuncios",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get anuncios Id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios",
-								"62ab86ee7f076651638bd50c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete anuncios Id",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "access-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQxODI4MCwiZXhwIjoxNjU1NTA0NjgwfQ.F-vGS9pmaHr-lGNs1h-GenVwf8zrEn2yT7W1rBiDo_k",
-								"type": "default"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios/62abe1c258c33f5bc2143d31",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios",
-								"62abe1c258c33f5bc2143d31"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update anuncio Id",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \r\n    \"amenidades\": [{\r\n        \"cantBanos\": 2\r\n\r\n    }]\r\n   \r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios",
-								"62ab86ee7f076651638bd50c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "post anuncio --> el usuario que lo crea es el ha iniciado seccion y pasa su access-token",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "access-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJiMWNiN2JmNjg0MzAyZGFhOTE5YyIsImlhdCI6MTY1NTQ0Mjc3NCwiZXhwIjoxNjU1NTI5MTc0fQ.4-USs1pOYmCbavvYKE7f3AdOjVpE4tI5gWjX770HBHI",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"propiedad\": \"62abc945f9acb1219dd4153c\",\r\n    \"moneda\": \"Dolar Americano\",\r\n    \"precio\": 40000,\r\n    \"descripcion\": \"Casa de lujo con espacio suficiente para familias extensas\",\r\n    \"imgUrl\": \"\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get anuncios Id Usuario",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios/62abb1cb7bf684302daa919c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios",
-								"62abb1cb7bf684302daa919c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "post anuncio img",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "access-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQyNTg2MiwiZXhwIjoxNjU1NTEyMjYyfQ.qtXiUcpUwrbfEitM90Sekt9C13_y9LIcEAuXATOUnPc",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/lopez/Downloads/casasgaldamez.jpg"
-								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:4000/api/anuncios/upload-image/62abe36d1ee70d80cd3c5296",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"anuncios",
-								"upload-image",
-								"62abe36d1ee70d80cd3c5296"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
 		{
 			"name": "Usuario",
 			"item": [
@@ -236,7 +35,8 @@
 								"auth",
 								"login"
 							]
-						}
+						},
+						"description": "Sele pasan los datos necesarios para el inicio de seción, correo y contraseña, al iniciar seción se genera el access-token, el cual es necesario para el dar permiso a ciertas peticiones"
 					},
 					"response": []
 				},
@@ -266,7 +66,8 @@
 								"auth",
 								"registrarse"
 							]
-						}
+						},
+						"description": "Nos permite registrar un nuevo usuario, no permite registrar un correo que ya exista"
 					},
 					"response": []
 				},
@@ -286,7 +87,8 @@
 								"api",
 								"usuario"
 							]
-						}
+						},
+						"description": "Lista todos los usurios existentes"
 					},
 					"response": []
 				},
@@ -307,7 +109,8 @@
 								"usuario",
 								"62aba0ef9c8758662b1e10f7"
 							]
-						}
+						},
+						"description": "Lista los usurios por su Id"
 					},
 					"response": []
 				}
@@ -344,7 +147,8 @@
 								"api",
 								"propiedad"
 							]
-						}
+						},
+						"description": "Lista todas las propiedades existentes"
 					},
 					"response": []
 				},
@@ -373,7 +177,8 @@
 								"api",
 								"propiedad"
 							]
-						}
+						},
+						"description": "Nos permite la creacion de una nueva propiedad"
 					},
 					"response": []
 				},
@@ -406,7 +211,8 @@
 								"propiedad",
 								"62abc984fa5a40ac7b5dc674"
 							]
-						}
+						},
+						"description": "Lista las propiedades por su Id"
 					},
 					"response": []
 				},
@@ -442,7 +248,8 @@
 								"propiedad",
 								"62abc984fa5a40ac7b5dc674"
 							]
-						}
+						},
+						"description": "Nos permite la creacion de una nueva propiedad, es necesario parsarle el access-token mediante el header para tener acceso a la peticion"
 					},
 					"response": []
 				},
@@ -477,6 +284,209 @@
 								"api",
 								"propiedad",
 								"62abca1a0fdccac3941bfa64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ANUNCIOS",
+			"item": [
+				{
+					"name": "Get anuncios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios"
+							]
+						},
+						"description": "Trae todos los anuncios"
+					},
+					"response": []
+				},
+				{
+					"name": "Get anuncios Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62ab86ee7f076651638bd50c"
+							]
+						},
+						"description": "Trae los anuncios por IdAnuncio"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete anuncios Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQxODI4MCwiZXhwIjoxNjU1NTA0NjgwfQ.F-vGS9pmaHr-lGNs1h-GenVwf8zrEn2yT7W1rBiDo_k",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62abe1c258c33f5bc2143d31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62abe1c258c33f5bc2143d31"
+							]
+						},
+						"description": "Elimina los anuncions por Id, es necesario pasarle el access-token del usuario en el header, para darle autorizacion a la peticion."
+					},
+					"response": []
+				},
+				{
+					"name": "update anuncio Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"amenidades\": [{\r\n        \"cantBanos\": 2\r\n\r\n    }]\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62ab86ee7f076651638bd50c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62ab86ee7f076651638bd50c"
+							]
+						},
+						"description": "Actualiza los anuncions por Id, se puede actulizar cualquier campo que sea parte del anuncio, es necesario pasarle el access-token del usuario en el header, para darle autorizacion a la peticion."
+					},
+					"response": []
+				},
+				{
+					"name": "post anuncio --> el usuario que lo crea es el ha iniciado seccion y pasa su access-token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJiMWNiN2JmNjg0MzAyZGFhOTE5YyIsImlhdCI6MTY1NTQ0Mjc3NCwiZXhwIjoxNjU1NTI5MTc0fQ.4-USs1pOYmCbavvYKE7f3AdOjVpE4tI5gWjX770HBHI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propiedad\": \"62abc945f9acb1219dd4153c\",\r\n    \"moneda\": \"Dolar Americano\",\r\n    \"precio\": 40000,\r\n    \"descripcion\": \"Casa de lujo con espacio suficiente para familias extensas\",\r\n    \"imgUrl\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios"
+							]
+						},
+						"description": "Crea los anuncions en base a las Propiedades existentes, es necesario que la Propiedad exista, pues se le pasa el Id de este, es necesario pasarle el access-token del usuario en el header, para darle autorizacion a la peticion, mediante el access-token se obtiene el Id del usuario que ha creado el anuncio."
+					},
+					"response": []
+				},
+				{
+					"name": "Get anuncios Id Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/62abb1cb7bf684302daa919c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"62abb1cb7bf684302daa919c"
+							]
+						},
+						"description": "Lista los anuncios por usuario, se le pasas el Id del usurario como parametro en la url"
+					},
+					"response": []
+				},
+				{
+					"name": "post anuncio img",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWJhMGVmOWM4NzU4NjYyYjFlMTBmNyIsImlhdCI6MTY1NTQyNTg2MiwiZXhwIjoxNjU1NTEyMjYyfQ.qtXiUcpUwrbfEitM90Sekt9C13_y9LIcEAuXATOUnPc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/lopez/Downloads/casasgaldamez.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/anuncios/upload-image/62abe36d1ee70d80cd3c5296",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"anuncios",
+								"upload-image",
+								"62abe36d1ee70d80cd3c5296"
 							]
 						}
 					},
